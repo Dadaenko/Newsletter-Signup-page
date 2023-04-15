@@ -42,7 +42,7 @@ const jsonData = JSON.stringify(data);
 const url = "https://us21.api.mailchimp.com/3.0/lists/d66481d08d";
 const options = {
   method: "POST",
-  auth: "daria:c37fc292cf704100b2322f5d6975d399-us21"
+  auth: "daria:API.key"
 }
 
 const request = https.request(url, options, function(response) {
@@ -60,6 +60,6 @@ app.listen(3000, function(){
   console.log("Server is running on port 3000");
 });
 
-//API key of Mailchimp c37fc292cf704100b2322f5d6975d399-us21
+
 
 //Audience ID d66481d08d -> Audience -> Settings -> Audience name and defaults
