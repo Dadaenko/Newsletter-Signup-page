@@ -42,7 +42,7 @@ const jsonData = JSON.stringify(data);
 const url = "https://us21.api.mailchimp.com/3.0/lists/d66481d08d";
 const options = {
   method: "POST",
-  auth: "daria:API.key"
+  auth: "daria:Mailchimp.API.key"
 }
 
 const request = https.request(url, options, function(response) {
